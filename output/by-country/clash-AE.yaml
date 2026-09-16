@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 45.130.125.201
+  port: 80
+  udp: true
+  type: vless
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a85d3eb0-c71e-4086-8139-6ac7c9120389
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -17,7 +40,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 57.129.130.200
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 93c53b59-1523-4621-9528-77b016a28304
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
@@ -27,27 +65,15 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 85.204.107.181
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c86f3ea2-4594-4966-a14a-8c7a45051b69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -58,6 +84,35 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  server: 207.148.112.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /discuss?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +123,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +137,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
 rules:
 - MATCH,PROXIES
