@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.233",
+      "server": "82.198.246.97",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -23,20 +23,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -57,6 +45,28 @@
     },
     {
       "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
       "server": "34.87.244.111",
       "server_port": 443,
@@ -66,7 +76,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
