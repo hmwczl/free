@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.17.147.22
-  port: 443
-  udp: true
-  type: trojan
-  password: f88f080e9b4f66c6
-  sni: Open-39.avL-a47261.worKErS.Dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/RIe4tZSAV4RjTfHKZ24cX27AmBg0?ed=2560
-- name: 🇮🇶 IQ 02 - xiaohe
   server: 193.56.135.137
   port: 9543
   udp: true
@@ -34,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
-  - 🇮🇶 IQ 02 - xiaohe
 rules:
 - MATCH,PROXIES
