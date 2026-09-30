@@ -6,20 +6,16 @@
     {
       "type": "trojan",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "45.205.0.6",
+      "server": "45.130.125.76",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        ]
       },
       "transport": {
         "type": "ws",

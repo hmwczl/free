@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 45.205.0.6
+  server: 45.130.125.76
   port: 443
   udp: true
   type: trojan
   password: humanity
   sni: www.calmlunch.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
