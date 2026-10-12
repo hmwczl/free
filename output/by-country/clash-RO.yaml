@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaohe
-  server: 77.74.123.103
+  server: 77.74.123.98
   port: 8443
   udp: true
   type: hysteria2
@@ -36,7 +36,7 @@ proxies:
   servername: ro1.gigobingo.ru
   client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaohe
-  server: bogging-eyeteeth-fly.freesocks.work
+  server: 154.46.31.106
   port: 443
   udp: true
   type: ss
